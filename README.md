@@ -20,3 +20,6 @@
 #####Phase 2
 - Advanced Calculator functionality
 	- Calculator should be able to do more advanced arithmetic (exponents, square, cube, square roots)
+
+### BONUS STAGE - HARD MODE
+- Calculator should have sine, cosine and tangent calculations. However, you should *not* use any built in trigonometric methods and you must create your own. 
