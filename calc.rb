@@ -34,6 +34,11 @@ def do_arithmetic(operation, number_1, number_2)
 	end
 end
 
+def print_result(number_1, operation, number_2, result)
+	puts "Here is your result:"
+	puts number_1.to_s + operation.to_s + number_2.to_s + " = " + result.to_s
+end
+
 
 # run the calculator
 
@@ -47,8 +52,7 @@ number_2 = input_number_2
 
 result = do_arithmetic(operation, number_1, number_2)
 
-puts "Here is your result:"
-puts number_1.to_s + operation.to_s + number_2.to_s + " = " + result.to_s
+print_result(number_1, operation, number_2, result)
 
 # puts number_1.to_s + operation.to_s + number_2.to_s + "=" + number_1.to_i + number_2.to_i
 
