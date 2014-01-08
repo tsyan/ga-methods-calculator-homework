@@ -19,6 +19,8 @@ def input_number_2
 	return gets.chomp.to_i
 end
 
+
+
 # run the calculator
 
 greeting
@@ -29,4 +31,28 @@ operation = input_operation
 
 number_2 = input_number_2
 
-puts number_1.to_s + operation.to_s + number_2.to_s
+result = case operation
+	when "+"
+		number_1.to_i + number_2.to_i
+	when "-"
+		number_1.to_i - number_2.to_i
+	when "*"
+		number_1.to_i * number_2.to_i
+	when "/"
+		number_1.to_i / number_2.to_i
+	else
+		"I have no idea what's going on."
+end
+
+puts "Here is your result:"
+puts number_1.to_s + operation.to_s + number_2.to_s + " = " + result.to_s
+
+# puts number_1.to_s + operation.to_s + number_2.to_s + "=" + number_1.to_i + number_2.to_i
+
+
+
+
+
+
+
+
