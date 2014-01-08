@@ -19,6 +19,20 @@ def input_number_2
 	return gets.chomp.to_i
 end
 
+def do_arithmetic(operation, number_1, number_2)
+	case operation
+		when "+"
+			number_1.to_i + number_2.to_i
+		when "-"
+			number_1.to_i - number_2.to_i
+		when "*"
+			number_1.to_i * number_2.to_i
+		when "/"
+			number_1.to_i / number_2.to_i
+		else
+			"I have no idea what's going on."
+	end
+end
 
 
 # run the calculator
@@ -31,18 +45,7 @@ operation = input_operation
 
 number_2 = input_number_2
 
-result = case operation
-	when "+"
-		number_1.to_i + number_2.to_i
-	when "-"
-		number_1.to_i - number_2.to_i
-	when "*"
-		number_1.to_i * number_2.to_i
-	when "/"
-		number_1.to_i / number_2.to_i
-	else
-		"I have no idea what's going on."
-end
+result = do_arithmetic(operation, number_1, number_2)
 
 puts "Here is your result:"
 puts number_1.to_s + operation.to_s + number_2.to_s + " = " + result.to_s
